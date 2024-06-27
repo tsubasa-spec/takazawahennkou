@@ -12,7 +12,7 @@ int total = (int) request.getAttribute("total");
 
 <html>
 <head>
-<title>書籍管理システム</title>
+<title>ユニフォーム予約管理システム</title>
 <link rel="stylesheet"
 	href="<%=request.getContextPath()%>/view/css/style.css">
 </head>
