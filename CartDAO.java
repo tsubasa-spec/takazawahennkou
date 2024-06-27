@@ -41,15 +41,15 @@ public class CartDAO {
 
 		try{
 			//引数の情報を利用し、登録用のSQL文を文字列として定義
-			String sql = "INSERT INTO" 
-					+ "cart_info VALUES(NULL,'"
+			String sql = "INSERT INTO " 
+					+ "cart_info VALUES("+"'"
 					+cart.getCartid() +"','"
 					+cart.getUserid() +"',"
 					+cart.getGoodsid() +","
 					+cart.getQuantity()+ ",'"
 					+cart.getOrderdate() +"','"
 					+cart.getPaymentdate() +"','"
-					+cart.getGoodsName() +"'"+ ",CURDATE())";
+					+cart.getGoodsName() +"')";
 			
 			//GoodsDAOクラスに定義した、getConnection()メソッドを利用してConnectionオブジェクトを生成
 			con = getConnection();
